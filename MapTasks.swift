@@ -23,5 +23,21 @@ class MapTasks: NSObject {
     override init() {
     super.init()
     
-}
+   }
+    
+    
+    func geocodeAddress(address: String!, withCompletionHandler completionHandler: ((status: String, success: Bool) -> Void)) {
+        
+    }
+    
+ 
+    
+    if let lookupAddress = address {
+        var geocodeURLString = baseURLGeocode + "address=" + lookupAddress
+        geocodeURLString = geocodeURLString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        
+        let geocodeURL = NSURL(string: geocodeURLString)
+    }
+    
+    
 }
